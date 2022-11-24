@@ -1,0 +1,26 @@
+
+header{
+    font-size: 14px;
+    display: flex;
+    height: 7vh;
+    padding: 24px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    h1{
+       font-weight: 800;
+       font-size: 14px;
+       margin: 0;               
+        span{
+            color: var(--main-color)
+        }
+    }
+    .iconsBlock{
+        display: flex;
+        width: 70px;
+        justify-content: space-between;        
+        span{
+            color: var(--main-color);
+        }
+    }
+
+}

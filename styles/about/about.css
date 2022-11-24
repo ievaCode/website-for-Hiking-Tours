@@ -1,0 +1,17 @@
+.about img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.about a {
+  font-size: 12px;
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+.about .empty {
+  height: 50px;
+}/*# sourceMappingURL=about.css.map */

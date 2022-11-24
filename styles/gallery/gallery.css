@@ -1,0 +1,11 @@
+.gallery .galleryWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  background-color: var(--main-color);
+}
+.gallery img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}/*# sourceMappingURL=gallery.css.map */

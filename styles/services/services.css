@@ -1,0 +1,24 @@
+.ourServices {
+  background-color: var(--second-bg-color);
+}
+.ourServices .serviceCardWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 10px;
+}
+.ourServices .serviceCardWrap .serviceCard {
+  width: 45%;
+  text-align: center;
+}
+.ourServices .serviceCardWrap .serviceCard span {
+  padding: 10px;
+  background-color: var(--main-color);
+}
+.ourServices .serviceCardWrap .serviceCard h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1;
+  margin: 16px 0;
+}/*# sourceMappingURL=services.css.map */

@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
+:root {
+  --main-color: #645cff;
+  --second-bg-color: #f1f1f6;
+}
+
+html {
+  font-family: "Almarai", sans-serif;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 26px;
+  letter-spacing: 3px;
+  text-align: center;
+  margin: 20px 0 40px 0;
+}
+h2 span {
+  color: #645cff;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.8;
+  margin: 16px 0;
+}
+
+section:not(.hero) {
+  box-sizing: border-box;
+  padding: 30px 24px 50px 24px;
+}
+
+p {
+  font-size: 12px;
+}/*# sourceMappingURL=common.css.map */

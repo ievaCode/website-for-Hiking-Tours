@@ -1,0 +1,24 @@
+.ourServices{
+  background-color: var(--second-bg-color);
+  .serviceCardWrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 10px;
+    .serviceCard{
+      width: 45%;
+      text-align: center;  
+      span{
+        padding: 10px;
+        background-color: var(--main-color);
+      }
+      h4{
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 15px;
+        letter-spacing: 1;
+        margin: 16px 0;
+      }
+    }
+  }
+}
