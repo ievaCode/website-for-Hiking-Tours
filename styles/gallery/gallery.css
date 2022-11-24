@@ -1,3 +1,7 @@
+.gallery {
+  background-color: var(--second-bg-color);
+  padding-top: 30px;
+}
 .gallery .galleryWrap {
   display: flex;
   flex-direction: column;
@@ -8,4 +12,17 @@
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+}
+.gallery img:hover {
+  opacity: 0.8;
+}
+
+@media (min-width: 1000px) {
+  .gallery .galleryWrap {
+    flex-direction: row;
+    gap: 0;
+  }
+  .gallery .galleryWrap img {
+    width: 25%;
+  }
 }/*# sourceMappingURL=gallery.css.map */

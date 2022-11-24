@@ -1,3 +1,6 @@
+.about {
+  padding: 30px 24px 100px 24px;
+}
 .about img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -12,6 +15,41 @@
   font-weight: 700;
   margin-bottom: 100px;
 }
-.about .empty {
-  height: 50px;
+
+@media (min-width: 1000px) {
+  .about {
+    padding: 40px 70px 100px 70px;
+  }
+  .about .aboutWrap {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .about .imageWrap {
+    width: 42%;
+    height: 300px;
+    position: relative;
+    border: 5px solid var(--main-color);
+  }
+  .about img {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    margin: 0;
+    padding: 0;
+  }
+  .about .aboutInfoWrap {
+    width: 50%;
+  }
+  .about p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+  }
+  .about a {
+    font-size: 15px;
+  }
 }/*# sourceMappingURL=about.css.map */

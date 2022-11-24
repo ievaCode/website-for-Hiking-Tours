@@ -6,6 +6,9 @@ header {
   justify-content: space-between;
   box-sizing: border-box;
 }
+header nav {
+  display: none;
+}
 header h1 {
   font-weight: 800;
   font-size: 14px;
@@ -21,4 +24,25 @@ header .iconsBlock {
 }
 header .iconsBlock span {
   color: var(--main-color);
+}
+
+@media (min-width: 1000px) {
+  header nav {
+    display: inline-block;
+    width: 30%;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  header nav ul li {
+    list-style: none;
+  }
+  header nav ul a {
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+  }
 }/*# sourceMappingURL=header.css.map */

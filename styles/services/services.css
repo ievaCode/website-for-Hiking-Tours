@@ -1,24 +1,59 @@
-.ourServices {
+.services {
   background-color: var(--second-bg-color);
+  padding: 30px 24px 50px 24px;
 }
-.ourServices .serviceCardWrap {
+.services .serviceCardWrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 10px;
 }
-.ourServices .serviceCardWrap .serviceCard {
+.services .serviceCardWrap .serviceCard {
   width: 45%;
   text-align: center;
 }
-.ourServices .serviceCardWrap .serviceCard span {
+.services .serviceCardWrap .serviceCard span {
   padding: 10px;
   background-color: var(--main-color);
 }
-.ourServices .serviceCardWrap .serviceCard h4 {
+.services .serviceCardWrap .serviceCard h4 {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 15px;
   letter-spacing: 1;
   margin: 16px 0;
+}
+
+@media (min-width: 1000px) {
+  .services {
+    padding: 40px 70px 100px 70px;
+  }
+  .services .serviceCardWrap .serviceCard {
+    display: flex;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    width: 30%;
+  }
+  .services .serviceCardWrap .serviceCard span {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 20px;
+  }
+  .services .serviceCardWrap .serviceCard .infoWrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .services .serviceCardWrap .serviceCard h4 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-align: left;
+  }
+  .services .serviceCardWrap .serviceCard p {
+    text-align: justify;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin: 0;
+  }
 }/*# sourceMappingURL=services.css.map */

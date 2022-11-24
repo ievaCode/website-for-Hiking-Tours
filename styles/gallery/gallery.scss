@@ -1,4 +1,6 @@
 .gallery{
+  background-color: var(--second-bg-color);
+  padding-top: 30px;
   .galleryWrap{
     display: flex;
     flex-direction: column;
@@ -8,5 +10,20 @@
   img{
     object-fit: cover;
     width: 100%;
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .gallery{
+    .galleryWrap{
+      flex-direction: row;
+      gap: 0;
+      img{
+        width: 25%;
+      }
+    }
   }
 }

@@ -1,17 +1,24 @@
 .tours {
+  padding: 30px 24px 50px 24px;
+}
+.tours .tourCardWrap {
   display: flex;
   flex-direction: column;
 }
 .tours .tourCardWrap .tourCard {
+  width: 100%;
   position: relative;
   box-shadow: 1px 1px 2px 1px rgb(215, 215, 215);
   margin-bottom: 30px;
+}
+.tours .tourCardWrap .tourCard:hover {
+  box-shadow: 4px 4px 2px 1px rgb(215, 215, 215);
 }
 .tours .tourCardWrap .tourCard img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 220px;
+  height: auto;
 }
 .tours .tourCardWrap .tourCard .dateTag {
   padding: 5px;
@@ -42,22 +49,73 @@
   font-size: 12px;
   color: var(--main-color);
 }
-.tours .tourCardWrap .tourCard .infoWrap .infoTag1 {
+.tours .tourCardWrap .tourCard .infoWrap .countryTag .infoTag1 {
   width: 70px;
   grid-column: 2;
   margin: 0;
 }
-.tours .tourCardWrap .tourCard .infoWrap .infoTag2 {
+.tours .tourCardWrap .tourCard .infoWrap .countryTag .infoTag2 {
   grid-area: 2/2/3/3;
   margin: 0;
 }
-.tours button {
-  width: 90px;
-  margin: 20px auto 0 auto;
+.tours .tourCardWrap .tourCard .infoWrap .countryTag::before {
+  font: var(--fa-font fa-map);
+  content: "\f279";
+}
+.tours .linkWrap {
+  text-align: center;
+}
+.tours .linkWrap a {
+  font-size: 14px;
+  text-decoration: none;
   color: var(--main-color);
-  padding: 5px 10px;
-  border: none;
-  background-color: #fff;
-  font-size: 11;
   font-weight: 700;
+  margin-bottom: 100px;
+}
+
+@media (min-width: 1000px) {
+  .tours {
+    padding: 40px 70px 100px 70px;
+  }
+  .tours .tourCardWrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+  }
+  .tours .tourCardWrap .tourCard {
+    width: 32%;
+  }
+  .tours .tourCardWrap .tourCard img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 270px;
+  }
+  .tours .tourCardWrap .tourCard .dateTag {
+    padding: 5px;
+    top: 10px;
+  }
+  .tours .tourCardWrap .tourCard .dateTag p {
+    margin: 0;
+    font-size: 14px;
+    top: 15px;
+  }
+  .tours .tourCardWrap .tourCard .tourName {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.8;
+    margin: 16px 0;
+  }
+  .tours .tourCardWrap .tourCard .infoWrap .countryTag {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .tours .tourCardWrap .tourCard .infoWrap .infoTag1, .tours .tourCardWrap .tourCard .infoWrap .infoTag2 {
+    width: 100px;
+    font-size: 15px;
+  }
+  .tours .linkWrap a {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=tours.css.map */

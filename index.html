@@ -12,6 +12,15 @@
 <body>
 	<header>
 			<h1>Hiking <span>Tours</span></h1>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="tours">Tours</a></li>
+					<li><a href="#gallery">Gallery</a></li>
+				</ul>					
+			</nav>
 			<div class="iconsBlock">
 					<span class="fa-brands fa-facebook"></span>
 					<span class="fa-brands fa-twitter"></span>
@@ -25,33 +34,44 @@
 					<button>Explore Tours</button>            
 			</section>
 			<section id="about" class="about">
-					<h2>About <span>us</span></h2>
-					<img src="./images/hiking1.jpg" alt="group of people in the mountains">
-					<h3>Explore the difference</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, laboriosam quos facilis beatae ut esse labore voluptatibus tenetur modi repellendus.</p>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, laboriosam quos facilis beatae ut esse labore voluptatibus tenetur modi repellendus.</p>
-					<a href="">Read More
-							<span class="visually-hidden"> of the section "about us"</span>
-					</a>
-					<div class="empty"></div>
+				<h2>About <span>us</span></h2>
+				<div class="aboutWrap">
+					<div class="imageWrap">				
+						<img src="./images/hiking1.jpg" alt="group of people in the mountains">
+					</div>	
+					<div class="aboutInfoWrap">
+						<h3>Explore the difference</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, laboriosam quos facilis beatae ut esse labore voluptatibus tenetur modi repellendus.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, laboriosam quos facilis beatae ut esse labore voluptatibus tenetur modi repellendus.</p>
+						<a href="">Read More
+								<span class="visually-hidden"> of the section "about us"</span>
+						</a>
+					</div>
+				</div>
 			</section>
-			<section id="ourServices" class="ourServices">
+			<section id="ourServices" class="services">
 					<h2>Our <span>services</span></h2>
 					<div class="serviceCardWrap">
 						<div class="serviceCard">
 								<span class="fa-brands  fa-twitter"></span>
-								<h4>Saving money</h4>
-								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, adipisci.</p>
+								<div class="infoWrap">
+									<h4>Saving money</h4>
+									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, adipisci.</p>
+							</div>
 						</div>
 						<div class="serviceCard">
 								<span class="fa-brands  fa-twitter"></span>
-								<h4>Endless hiking</h4>
-								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, adipisci.</p>
+								<div class="infoWrap">
+									<h4>Endless hiking</h4>
+									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, adipisci.</p>
+							</div>
 						</div>
 						<div class="serviceCard">
 								<span class="fa-brands  fa-twitter"></span>
-								<h4>Amazing comfort</h4>
-								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, adipisci.</p>
+								<div class="infoWrap">
+									<h4>Amazing comfort</h4>
+									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, adipisci.</p>
+							</div>
 						</div>
 				</div>
 			</section>
@@ -107,19 +127,48 @@
 						</div>
 					</div>
 				</div>
-				<button>All Tours</button>
+				<div class="linkWrap">
+					<a href="">All tours</a>
+				</div>				
 			</section>
 			<section id="gallery" class="gallery">
 				<h2>Our <span>gallery</span></h2>
 				<div class="galleryWrap">
-					<img src="./images/asia1.jpg" alt="">
 					<img src="./images/city1.jpg" alt="">
 					<img src="./images/hiking1.jpg" alt="">
 					<img src="./images/lights1.jpg" alt="">
 					<img src="./images/mountains1.jpg" alt="">
 				</div>
-			</section>              
-	</main>
-    
+			</section>
+			<section id="signUp" class="signUp">
+				<div class="signUpWrap">
+					<h4>Want latest tour info updates?</h4>
+					<p>Sign up for newsletter and stay up to date</p>
+					<table>
+						<div class="tableWrap">
+							<input type="email" id="email">
+							<input type="submit">
+						</div>
+					</table>
+				</div>
+			</section>
+			<footer id="footer">
+				<nav>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="tours">Tours</a></li>
+						<li><a href="#gallery">Gallery</a></li>
+					</ul>					
+				</nav>
+				<div class="iconsBlock">
+					<span class="fa-brands fa-facebook"></span>
+					<span class="fa-brands fa-twitter"></span>
+					<span class="fa-brands fa-linkedin"></span>
+			</div>
+			<p class="copyright">Copyright <span>&copy;</span> Hiking Tours 2022. All rights reserved.</p>
+		</footer>              
+	</main>    
 </body>
 </html>

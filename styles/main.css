@@ -6,4 +6,6 @@
 @import url('./about/about.css');
 @import url('./services/services.css');
 @import url('./tours/tours.css');
-@import url('./gallery/gallery.css')
+@import url('./gallery/gallery.css');
+@import url('./signUp/signUp.css');
+@import url('./footer/footer.css');
